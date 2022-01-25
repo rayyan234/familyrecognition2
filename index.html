@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>family recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+       <link rel="stylesheet" href="style.css">
+       <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      
+    </head>
+<body>
+    <div class="container">
+    
+        <center>
+    <h1  >Family Recognition Web App</h1>
+          <br><br>
+    
+          <h2>Model is Trained to Identify father,Mother,sister and brother</h2>
+    <b class="name-of-objects">
+      Father
+      <hr>
+      Mother
+      <hr>
+      Sister
+      <hr>
+      Brother
+      <hr>
+      
+    </b>
+    <span class="btn btn-success" id="person_name"><label>
+Person:
+    </label>
+</span>
+
+<span class="btn btn-warning" id="person_name"><label>
+    Accuracy:
+        </label>
+    </span>
+    <br>
+    <br>
+          <label>Webcam View - </label>
+    <div id="camera"></div>
+    
+          <br><br>
+    <div id="result"></div>
+          <br><br>
+    <button class="btn btn-warning" onclick="takesnapshot()">Capture Image</button>
+          <br><br>
+    <button class="btn btn-info" onclick="check()">Identify Person</button>
+          <br><br>
+  
+        
+        </center>
+    
+      </div>
+    <script src="main.js"></script>
+    
+</body>
+    </html>

@@ -1,0 +1,10 @@
+body{
+    background-color: fuchsia;
+}
+#camera{
+    border: 2px;
+    border-color: darkred;
+    border-style: dotted;
+    width:350px;
+    height:300px;
+}
